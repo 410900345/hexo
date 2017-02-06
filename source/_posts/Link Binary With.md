@@ -1,7 +1,8 @@
 ---
 title: Xcode中Link Binary With Libraries Status Required or Optional
 date: 2016-12-06 12:00:58
-categories: 
+categories:
+  ios
 tags:
 ---
 
