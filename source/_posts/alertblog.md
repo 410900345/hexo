@@ -9,18 +9,25 @@ categories:
 万能的[stackoverflow](http://stackoverflow.com/questions/32744209/ios-9-keyboard-pops-up-after-uialertview-dismissed)上面有这个问题的一些解决方案:**
 
 1.使用新的api,UIAlertController
-  
-  	UIAlertController *alertController = [UIAlertController  	alertControllerWithTitle:@"Alert Title!" message:@"This is an alert 	message." preferredStyle:UIAlertControllerStyleAlert]; 
-      UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" 	style:UIAlertActionStyleDefault handler:nil]; [alertController 	addAction:ok];
-      [self presentViewController:alertController animated:NO completion:nil];
+
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert Title!" message:@"This is an alert message." preferredStyle:UIAlertControllerStyleAlert]; 
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]; 
+	[alertController addAction:ok];
+    [self presentViewController:alertController animated:NO completion:nil];
+
+<!--more-->
 
 2.另外一个方法就是延迟调用一下alertView
-
-	   @weakify(self);dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 *NSEC_PER_SEC)),   	dispatch_get_main_queue(), ^{@strongify(self);[self loadUpdateAPI]; });
+	
+	@weakify(self);
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 *NSEC_PER_SEC)),dispatch_get_main_queue(), ^{
+		@strongify(self);
+		[self loadUpdateAPI]; 
+	});
     
 3.另外一种注销键盘
 
-     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+	[[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
  ** 出现的原因**
 可能是键盘状态没有完全被收回,导致出现的
 
