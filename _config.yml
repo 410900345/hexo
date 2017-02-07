@@ -66,6 +66,7 @@ pagination_dir: page
 Plugins:
 - hexo-generator-feed
 - hexo-generator-sitemap
+- hexo-generator-search
 #Feed Atom
 feed:
   type: atom
@@ -78,9 +79,12 @@ sitemap:
 
 baidusitemap:
   path: baidusitemap.xml
-  
+
 theme: jacman
 
+search:
+  path: search.xml
+  field: all
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
