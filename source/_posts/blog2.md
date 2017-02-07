@@ -57,4 +57,5 @@ xxx.md 头部写成这样
 	</script>	
 ### 4.图片处理
 用七牛为 Hexo 存储图片[链接](http://clarkky.org/post/Hexo-Qiniu-Image-CDN/)
-	
+### 5开启统计
+hexo安装统计插件,[链接](http://www.cnblogs.com/tengj/p/5365434.html)
