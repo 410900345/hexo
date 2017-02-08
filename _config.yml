@@ -5,9 +5,9 @@
 # Site
 title: Oxygen的博客
 subtitle: 记录下自己学习的点滴
-description:
+description: "hello,every body!~" #网站描述
 author: Oxygen
-language:
+language: zh-CN
 timezone:
 
 # URL
