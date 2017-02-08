@@ -29,11 +29,11 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 *NSEC_PER_SEC)),di
     
 3.另外一种注销键盘
 
-```
+{% codeblock lang:objc %}
 [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
-```	
+{% endcodeblock %}
 
- ** 出现的原因**
+** 出现的原因**
 可能是键盘状态没有完全被收回,导致出现的
 
 **如果有更好的方案可以告诉我**
