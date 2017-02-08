@@ -84,3 +84,10 @@ date: {{ date }}
 categories: 
   tools
 {% endcodeblock %}
+
+### 8.代码显示不全等问题用下面方式避免,官网说明,[链接](https://hexo.io/docs/tag-plugins.html#Raw)
+```
+{% codeblock lang:objc %}
+[rectangle setX: 10 y: 10 width: 20 height: 20];
+{% endcodeblock %}
+```	
