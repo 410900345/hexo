@@ -1,11 +1,9 @@
 ---
-title: js学习(一)
-date: 2017-02-10 12:00:58
-categories: 
-  js
+title: 基本用法
+categories: js
+date: 2017-02-10 18:12:00
 tags:
 ---
-
 ### 基本用法
 1.不用new的话,this会变成全局变量
 

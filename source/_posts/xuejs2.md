@@ -1,10 +1,10 @@
 ---
-title: js学习(二)
-date: 2017-02-10 12:00:58
-categories: 
-  js
+title: xuejs2
+categories: js
+date: 2017-02-10 18:12:03
 tags:
 ---
+
 ### 常见类
 1.Boolean 验证类的布尔值
 
