@@ -1,5 +1,5 @@
 ---
-title: xuejs2
+title: js基本用法(二)
 categories: js
 date: 2017-02-10 18:12:03
 tags:
