@@ -56,3 +56,93 @@ lastIndexOf()	从后向前搜索字符串。
 i	执行对大小写不敏感的匹配。默认false
 g	执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。默认false 
 m	执行多行匹配 默认false
+
+	var s = new String("HelloJavaScriptWorld");
+	s.match(/a/); //匹配字符串
+	s.search(/j.*a/i); //匹配字符串索引位置
+	s.replace(/[A-Z]/g,''); //替换为空字符串
+replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。()为分组匹配分组的第一组;这些函数还可以匹配普通字符串;
+	
+	var email = "stoyan@phpied.com";
+	var username= email.replace(/(.*)@.*/,"$1");
+	
+	var callback = function(){ 
+	glob = arguments;
+	return arguments[1] +" at" + arguments[2] + " dot " + arguments[3];
+	}
+	"stoyan@phpied.com".replace(/(.*)@(.*)\.(.*)/, callback); //分组
+	"stoyan atphpied dot com" 
+	
+	var csv = "one, two, three, four";
+	csv.split(/\s*,\s*/); //空格匹配;
+7.error错误捕捉,,自定义错误对象,
+
+	try {
+	idont();
+	} catch (e) {
+	alert(e.name + ': ' + e.message);
+	}	
+	
+	try {
+	var total = mybeE();
+	if(total === 0) {
+	throw new Error("division by zero");
+	} else {
+	alert(50/total);
+	}
+	} catch (e){
+	alert(e.name + ': ' + e.message);
+	}
+	
+### 重要的属性-原型
+1.原型类似于父类的东西,gadget的父类gadget.prototype,可以增加属性,可以修改原型,然后影响原来的对象
+	
+	function gadget (name ,color) {
+	this.name = name;
+	this.color = color;
+	this.whatAreYou = function () {
+	return "i am a " + this.color + " " +this.name;
+	}
+	}			
+	
+	gadget.prototype = {
+	price : 100,
+	rating: 3,
+	getInfo :function() {
+	return "rating" + this.rating + "  price" + this.price;
+	}
+	}
+2.对象自身属性没有找到指定的属性,会去原型里面继续查找,如果相同,以对象的属性为准;打印属性;
+	
+	for (var prop in newToy) {
+	 console.log(prop + " = " + newToy[prop]);
+	 	
+newToy.hasOwnProperty属于自身的属性
+	 	
+	 for (var prop in newToy) {
+	if(newToy.hasOwnProperty(prop)){
+	console.log(prop + " = " + newToy[prop]);
+	}}	
+newToy.propertyIsEnumerable自身属性为true,原型中的为false;
+monke是对象george的原型;
+
+	monkey.isPrototypeOf(george);
+3.prototype和_proto_属性不是等价的,prototype改变并不会影响到_proto_
+
+	monkey.test = 1;
+	developer.test; //修改monkey的属性,修改developer内容;
+4.扩展内建函数常用Array,相当于iOS分类
+
+	Array.prototype.inArray = function (needle) {
+	for (var i = 0,len = this.length;i< len;i++){
+	if (this[i] === needle) {
+	return true;
+	}
+	}
+	}	
+5.判断函数是否可以使用,如果想添加一个属性或者方法最好看是不是已经存在其中;
+
+	if (!String.prototype.reverse) {
+	alert("1111");
+	}
+6.当我们重写某对象的prototype时候,重置相应的constructor是一个好习惯;		
