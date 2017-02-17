@@ -1,5 +1,5 @@
 ---
-title: weexUse
+title: weex使用介绍
 categories: 'BFE'
 date: 2017-02-17 11:38:28
 tags:
@@ -14,6 +14,8 @@ tags:
 [weexteam-demo](https://github.com/weexteam/weex-hackernews/)
 ###基本介绍
 1.安装环境,nodejs,下面是一些常用的命令.
+
+IDE: Sublime Text + [vue-syntax-highlight](https://github.com/vuejs/vue-syntax-highlight)
 
 ```
 npm install
