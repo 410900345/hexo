@@ -96,5 +96,5 @@ donate_message: 欣赏此文？求鼓励，求支持！
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/sukeyang/sukeyang.github.io.git #github仓库地址
+  repository: ssh://git@github.com/sukeyang/sukeyang.github.io.git #github仓库地址
   branch: master # github分支
