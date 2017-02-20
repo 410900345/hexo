@@ -12,14 +12,14 @@ tags:
    
 [weexteam-demo](https://github.com/weexteam/weex-hackernews/)
 
-###基本介绍
+## 基本介绍
 1.安装环境,nodejs,下面是一些常用的命令.
 
 IDE: Sublime Text + [vue-syntax-highlight](https://github.com/vuejs/vue-syntax-highlight)
 
 ```
 npm install
-npm install -g weex-toolkit@beta
+sudo npm install -g weex-toolkit@beta
 npm run build
 npm run copy:ios
 ```
