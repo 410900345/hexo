@@ -1,7 +1,7 @@
 ---
 title: git使用技巧
 categories: 'tools'
-date: 2017-02-20 09:55:28
+date: 2016-07-20 09:55:28
 tags:
 ---
 ### ssh-key的作用
