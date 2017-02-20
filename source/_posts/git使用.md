@@ -48,4 +48,4 @@ Permissions 0644 for '/Users/yangshuo/.ssh/winid_rsa' are too open.
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 ```
-解决办法：在命令行输入chmod 700 id_rsa.githu即可。这里“id_rsa.githu”就是warning里给出的密钥文件名。
+解决办法：在命令行输入chmod 700 id_rsa.github即可。这里“id_rsa.githu”就是warning里给出的密钥文件名。
