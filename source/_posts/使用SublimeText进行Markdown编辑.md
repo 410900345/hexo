@@ -11,7 +11,7 @@ tags:
 ```
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
-
+安装不上的问题，[看官方办法](https://packagecontrol.io/installation)
 ## 安装我们要用到的插件
 
 ```
