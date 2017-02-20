@@ -34,5 +34,3 @@ npm run serve
 ```
 weex debug --verbose
 ```
-
-<meta http-equiv="refresh" content="0.1">
