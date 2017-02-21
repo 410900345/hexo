@@ -49,3 +49,11 @@ It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 ```
 解决办法：在命令行输入chmod 700 id_rsa.github即可。这里“id_rsa.githu”就是warning里给出的密钥文件名。
+2.报错No submodule mapping found in .gitmodules for path;
+
+```
+git submodule status
+git rm --cached Classes/lib/AFKissXMLRequestOperation
+```
+查看状态,Classes/lib/AFKissXMLRequestOperation
+为要删除的路径,然后就oK了.
