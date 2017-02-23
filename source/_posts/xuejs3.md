@@ -35,3 +35,36 @@ prototype 是个类的对象;
 	c.uber = p; 
 		}
 	}
+### DOM环境
+1.访问标签,计时器,修改样式等
+
+```
+var inputs = document.getElementsByTagName('button');
+function toggle (){
+	var st = inputs[0].style;
+	inputs[0].style.visibility = (st.visibility == "hidden")?"visible":"hidden";
+}
+var myint = setInterval(toggle,1000);
+clearInterval(myint);
+```
+2.创建添加节点
+
+```
+var myp = document.createElement("p");
+myp.innerHTML = "yet another";
+myp.style.border = "2px dotted blue";
+document.body.appendChild(myp)
+```
+3.插入节点,删除节点
+
+```
+document.body.insertBefore(p,document.body.firstChild)
+document.body.removeChild(myp)
+```
+4.其他常用方法
+
+```
+document.title ="123"; //不改变实际标签内容
+document.cookie;
+```
+5.捕捉法和冒泡法
