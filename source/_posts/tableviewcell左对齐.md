@@ -50,5 +50,7 @@ if ([UITableView instancesRespondToSelector:@selector(setLayoutMargins:)]) {
 }
 ```
 参考链接:
-[stackoverflow](http://stackoverflow.com/questions/25770119/ios-8-uitableview-separator-inset-0-not-working?page=1&tab=active#tab-top)
-[http://www.cnblogs.com/Zev_Fung/p/5650922.html](http://www.cnblogs.com/Zev_Fung/p/5650922.html)
+
+1.[stackoverflow](http://stackoverflow.com/questions/25770119/ios-8-uitableview-separator-inset-0-not-working?page=1&tab=active#tab-top)
+
+2.[http://www.cnblogs.com/Zev_Fung/p/5650922.html](http://www.cnblogs.com/Zev_Fung/p/5650922.html)
