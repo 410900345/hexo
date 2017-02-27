@@ -1,13 +1,11 @@
 ---
 title: Carthage安装及使用
-categories: 'ios,技巧,tools,js,原理<!--选一个-->'
+categories: '原理'
 date: 2017-02-27 14:58:29
 tags:
 ---
 ## 简介
 Carthage 使用于 Swift 语言编写，只支持动态框架，只支持 iOS8+的Cocoa依赖管理工具。是一个去中心化的Cocoa依赖管理工具;
-原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上;
-
 CocoaPods对原有工程破坏性大(建立workspace,增加一堆乱七八糟的文件),侵入性太强,耦合太高;
 
 ## 环境安装
@@ -69,3 +67,8 @@ Carthage文件夹用来存放:
 carthage checkout 从git拉取的依赖库源文件(Checkouts)
 
 carthage build编译后的文件(Build),包含Mac 与 iOS对应的.framework,文件夹用来存放依赖库的源文件和编译后的文件(不需要提交到 Git，可以修改.gitignore文件，增加忽略 Carthage 文件夹就行了：#Carthage Carthage）
+
+
+## `参考连接`
+
+创建自己的[Cartfile支持的库](http://blog.csdn.net/ruglcc/article/details/53725251)
