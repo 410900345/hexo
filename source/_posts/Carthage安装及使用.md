@@ -1,7 +1,7 @@
 ---
-title: Carthage安装及使用
-categories: '原理'
-date: 2017-02-27 14:58:29
+title: Carthage安装及使用(一)
+categories: 'tools'
+date: 2016-12-01 14:58:29
 tags:
 ---
 ## 简介
@@ -68,7 +68,3 @@ carthage checkout 从git拉取的依赖库源文件(Checkouts)
 
 carthage build编译后的文件(Build),包含Mac 与 iOS对应的.framework,文件夹用来存放依赖库的源文件和编译后的文件(不需要提交到 Git，可以修改.gitignore文件，增加忽略 Carthage 文件夹就行了：#Carthage Carthage）
 
-
-## `参考连接`
-
-创建自己的[Cartfile支持的库](http://blog.csdn.net/ruglcc/article/details/53725251)
