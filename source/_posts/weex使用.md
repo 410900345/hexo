@@ -15,7 +15,7 @@ tags:
 ## 基本介绍
 1.安装环境,nodejs,下面是一些常用的命令.
 
-IDE: Sublime Text + [vue-syntax-highlight](https://github.com/vuejs/vue-syntax-highlight)
+IDE: Sublime Text + [vue-syntax-highlight](https://github.com/vuejs/vue-syntax-highlight) + HTML-CSS-JS Prettify
 
 ```
 npm install
