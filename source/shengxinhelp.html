@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>省心新概念英语帮助</title>
+	<style>
+	body{
+		background-color: #f5f5f5;
+		margin: 12px;
+		font-size: 16px;
+		color: #666;
+		line-height: 12px;
+	}
+	h1{
+		font-size: 17px;
+		color: #333;
+		line-height: 25px;
+		font-weight:normal;
+		margin: 0;
+		text-decoration: none;
+	}
+	
+	a{
+		font-size: 18px;
+		color: #23b99c;
+		line-height: 25px;
+		font-weight:normal;
+		margin: 0;
+		text-decoration: none;
+	}
+
+
+	
+	.line{
+		border-bottom: 1px solid #e5e5e5;
+		margin: 10px;
+	}
+	img{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		max-width: 100%;
+		border: 1px solid #ccc;
+		opacity:0.9;
+	}
+	p{
+		margin-top: 16px;
+		margin-bottom: 16px;
+		line-height: 25px;
+	}
+	</style>
+
+</head>
+<body>
+	<head>
+		<p>为了您更好的使用省心新概念英语,我们列出了使用中常见的问题，若是没有您要的答案您可通过下面的反馈意见联系我们。</p>
+	</head>
+
+	<div>
+		<h1 onclick="zhedie(this)">1.软件支不支持屏幕取词？</h1>
+		<div style="display:none;">
+		<p>
+			支持的,只要在设置中开启屏幕长按取词，就可以实现长按弹出单词的解释，真正实现了哪里不会点哪里！
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+
+<div>
+		<h1 onclick="zhedie(this)">2.软件支不支持音频语速调节？</h1>
+		<div style="display:none;">
+		<p>
+			支持的哦，点击播放器上面现代的1.0X就可以随心所欲的调整音频播放速度，让您的学习不再吃力!
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+
+<div>
+		<h1 onclick="zhedie(this)">3.为什么老提示我要捐款呢</h1>
+		<div style="display:none;">
+		<p>
+		软件坚持免费无广告，需要运营费用，希望您能谅解，给予我们继续开发好软件提供动力，有了您的支持我们将会把软件做得更好。
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div>
+		<h1 onclick="zhedie(this)">4.为什么不能使用新概念英语</h1>
+		<div style="display:none;">
+		<p>
+			软件的使用必须要有足够的空间(最好在300M以上为佳)而且网络畅通(最好wifi环境),若是满足两项条件软件还是没法使用请加入我们的官方QQ群90538211，我们在线为您解决!
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+	
+	<div>
+		<h1 onclick="zhedie(this)">5.勾选了自动播放下一篇，为什么会总是播放同一篇？</h1>
+		<div style="display:none;">
+		<p>
+		因为开启了单曲循环播放模式，在播放界面顶部的右边点击弹出菜单中关闭循环播放，就不会重复播放同一篇了!
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+	<div>
+		<h1 onclick="zhedie(this)">6.新概念英语需要付费吗？使用过程中会产生费用吗</h1>
+		<div style="display:none;">
+		<p>
+		新概念英语是完全免费的软件，下载免费，收听免费，收听或者下载时使用wifi网络，则不会花费您任何费用，但如果使用gprs或者3G网络而产生的流量费用全部由运营商（移动，联通等）收取，软件不会获得任何费用，所以强烈建议使用wifi网络使用。
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+	<div>
+		<h1 onclick="zhedie(this)">7.单词,新概念详解或答题详解中音标乱码怎么办？</h1>
+		<div style="display:none;">
+		<p>
+		遇到这个问题可以去设置&#8212;学习设置&#8212;使用推荐字体即可解决！
+		</p>
+		</div>
+		<div class="line"></div>
+	</div>
+	<footer>
+		<p>没有想要的答案，请通过反馈功能与我们取得联系。^_^</p>
+		<br/>
+		<a id="btn" href="ncechina://feedback">反馈建议 >></a>
+		<br>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</footer>
+</body>
+</html>
+
+<script type="text/javascript">
+var run = false;
+function zhedie(title) {
+	if (run == true) {
+		return false;
+	}
+	run = true;
+	var contentDiv = title.nextSibling.nextSibling.style;
+	if (contentDiv.display == 'none') {
+		contentDiv.opacity = 0;
+		contentDiv.display = "";
+		i = 0;
+		t1 = setInterval(function() {
+			i += 0.03;
+			contentDiv.opacity = i;
+			if (i > 1) {
+				contentDiv.opacity = 1;
+    			window.clearInterval(t1);
+				run = false;
+			}
+		} ,1);
+	} else {
+		i = 1;
+		t = setInterval(function() {
+			i -= 0.03;
+			contentDiv.opacity = i;
+			if (i < 0) {
+    			window.clearInterval(t);
+				contentDiv.opacity = 0;
+				contentDiv.display = "none";
+				run = false;
+			}
+		} ,1);
+	}
+}
+
+function changeColor(color){
+	document.getElementById("btn").style.color="#"+color;
+}
+
+</script>

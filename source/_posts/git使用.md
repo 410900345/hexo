@@ -38,7 +38,7 @@ ssh -T git@github.com
 ```
 Hi sukeyang! You've successfully authenticated, but GitHub does not provide shell access.
 ```
-1.提示 WARNING: UNPROTECTED PRIVATE KEY FILE!  
+* 1.提示 WARNING: UNPROTECTED PRIVATE KEY FILE!  
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -49,7 +49,7 @@ It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 ```
 解决办法：在命令行输入chmod 700 id_rsa.github即可。这里“id_rsa.githu”就是warning里给出的密钥文件名。
-2.报错No submodule mapping found in .gitmodules for path;
+* 2.报错No submodule mapping found in .gitmodules for path;
 
 ```
 git submodule status
@@ -57,3 +57,33 @@ git rm --cached Classes/lib/AFKissXMLRequestOperation
 ```
 查看状态,Classes/lib/AFKissXMLRequestOperation
 为要删除的路径,然后就oK了.
+* 3.多帐号github配置
+生成第二个ssh key,并按上面的方法进行测试
+
+```
+ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C "Key for GitHub"
+```
+修改在.ssh/下创建config文件 内容如下：
+
+```
+Host github.com  
+    HostName github.com  
+    IdentityFile ~/.ssh/id_rsa  
+  
+Host my.github.com  
+    HostName github.com  
+    IdentityFile ~/.ssh/my  
+```
+进行验证
+
+```
+ssh -T git@my.github.com
+```
+打开.Git/config文件,修改下面url地址就可以了
+
+```
+#更改[remote "origin"]项中的url中的  
+#my.github.com 对应上面配置的host  
+[remote "origin"]  
+    url = git@my.github.com:itmyline/blog.git  
+```
