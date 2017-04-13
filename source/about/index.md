@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2017-02-06 17:55:01
+comments: false
 ---
 ## info
 Oxygen iOS developer

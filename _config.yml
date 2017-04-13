@@ -5,9 +5,9 @@
 # Site
 title: SukeYang的博客
 subtitle: 记录下自己学习的点滴
-description: "hello,every body!~" #网站描述
+description: "记录下自己学习的点滴~" #网站描述
 author: SukeYang
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -16,6 +16,9 @@ url: https://sukeyang.github.io/
 root: /
 permalink: :year-:month-:day/:title/
 permalink_defaults:
+
+# theme-next
+avatar: /images/author.jpg
 
 # Directory
 source_dir: source
@@ -67,6 +70,7 @@ Plugins:
 - hexo-generator-feed
 - hexo-generator-sitemap
 - hexo-generator-search
+- hexo-generator-searchdb --save
 # - hexo-generator-baidu-sitemap
 #Feed Atom
 feed:
@@ -81,11 +85,13 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
-theme: jacman
+theme: next
 
 search:
   path: search.xml
-  field: all
+  field: post
+  format: html
+  limit: 10000
 
 #是否开启打赏功能
 donate: true

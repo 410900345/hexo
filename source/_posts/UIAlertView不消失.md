@@ -2,8 +2,7 @@
 title: iOS 9 - Keyboard 出现在 UIAlertView 不消失
 date: 2016-10-01 17:56:13
 tags:
-categories: 
-  ios
+categories: ios
 ---
 **今天遇见一个奇怪的bug,当我的UIAlertView 消失的时候键盘弹出来了,这个只出现在第一次安装的时候
 万能的[stackoverflow](http://stackoverflow.com/questions/32744209/ios-9-keyboard-pops-up-after-uialertview-dismissed)上面有这个问题的一些解决方案:**

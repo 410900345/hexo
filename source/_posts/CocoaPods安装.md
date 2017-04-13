@@ -3,8 +3,7 @@ title: iOS CocoaPods安装使用错误记录
 date: 2016-08-02 16:40:33
 tags:
   [tools,效率]
-categories:
-  tools
+categories: "tools"
 ---
 # 1.gem install cocoapods
 
