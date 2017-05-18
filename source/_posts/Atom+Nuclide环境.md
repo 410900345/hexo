@@ -42,6 +42,21 @@ brew upgrade watchman
 brew upgrade flow
 ```
 
+#### 3.常用插件
+禁用自带的`nuclide-format-js`
+
+下载格式化https://atom.io/packages/atom-beautify
+jsx里面开启
+
+消除atom 中间的线设置里面的atom->stylesheet添加下面代码
+
+```
+atom-text-editor::shadow .wrap-guide {
+  visibility: hidden;
+}
+```
+
+
 --------
 [参考1](http://www.lcode.org/%E3%80%90react-native%E5%BC%80%E5%8F%91%E3%80%91react-native%E5%BC%80%E5%8F%91ide%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/)
 
