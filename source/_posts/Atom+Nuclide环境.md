@@ -1,6 +1,6 @@
 ---
 title: Atom+Nuclide开发工具(React Native)
-categories: 'tools'
+categories: 'BFE'
 date: 2016-07-27 11:48:30
 tags:
 ---
