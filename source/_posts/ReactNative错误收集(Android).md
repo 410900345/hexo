@@ -24,11 +24,14 @@ BUILD FAILED
 
 ## 错误二:
 ```
-Brendas-MacBook-Pro:appx_android brendalogy$ ./gradlew compileDebug --stacktrace
--bash: ./gradlew: Permission denied
+jax$  react-native run-android
+Starting JS server...
+Building and installing the app on the device (cd android && ./gradlew installDebug...
+
+Could not install the app on the device, read the error above for details.
 ```
 执行下面的命令
 chmod 755 android/gradlew
-
+[facebook/react-native](https://github.com/facebook/react-native/issues/8868#issuecomment-303320822)
 
 ------
