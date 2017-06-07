@@ -5,21 +5,21 @@ date: 2016-12-15 10:47:26
 tags:
 ---
 
-##错误一:Unable to resolve module image!
+## 错误一:Unable to resolve module image!
 方法:	在 Xcode 下 Images.xcassets 里面明确的有这个图片。
 
-##错误二:低版本兼容,Log类接口修改, 添加 RCTLogSource source 即可.
+## 错误二:低版本兼容,Log类接口修改, 添加 RCTLogSource source 即可.
 	
 	RCTSetLogFunction(^(RCTLogLevel level, RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message)
 
-##错误三:RCTSRWebSocket.m报错,代码在下面
+## 错误三:RCTSRWebSocket.m报错,代码在下面
 
 	SecRandomCopyBytes(kSecRandomDefault, sizeof(uint32_t), (uint8_t *)mask_key);
 修改为:
 	
 	(void)SecRandomCopyBytes(kSecRandomDefault, sizeof(uint32_t), (uint8_t *)mask_key);	
 
-##错误四: Seem you're trying to access 'ReactNative.createClass' from the 'react-native package;
+## 错误四: Seem you're trying to access 'ReactNative.createClass' from the 'react-native package;
 
 	var React = require('react');
 	var component = React.createClass();
@@ -70,3 +70,11 @@ Undefined symbols for architecture x86_64:
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
+##错误七: React Native cant find RCTEventEmitter after cocoapods integration 
+
+解决方法:
+
+* cleaning xcode under Product menu cmd + K 
+* clearing rm ios/build/* 
+* react-native unlink 
+* src/ios $ pod clean && pod deintegrate && pod install
