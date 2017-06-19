@@ -34,4 +34,12 @@ Could not install the app on the device, read the error above for details.
 chmod 755 android/gradlew
 [facebook/react-native](https://github.com/facebook/react-native/issues/8868#issuecomment-303320822)
 
+## 错误三:zsh: command not found: adb
+
+1.解决办法
+在`~/.zshrc`文件里面添加找到.zshrc文件 中“# User configuration” 位置加入 “source ~/.bash_profile”(前提是bash_profile文件中的环境变量 你已经各种配置好了)
+2.重启命令行
+
+
+
 ------
