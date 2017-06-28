@@ -1,7 +1,7 @@
 ---
 title: 升级iOS10后，部分App更新之后无法联网怎么办？
 date: 2016-07-03 12:00:58
-categories: "iphone"
+categories: 'iphone'
 tags:
 ---
 

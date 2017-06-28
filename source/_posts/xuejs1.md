@@ -1,6 +1,6 @@
 ---
 title: js基本用法(一)
-categories: js
+categories: 'js'
 date: 2017-02-10 18:12:00
 tags:
 ---
