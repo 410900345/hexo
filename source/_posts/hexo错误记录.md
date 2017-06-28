@@ -12,5 +12,5 @@ tags:
 ```
 hexo generate fail - Template render error: (unknown path)
 ```
-* 检查代码`"{{ }}"`改成`"{/{ }/}"`
+* 检查代码`"{/{ }/}"`改成`"{/{ }/}"`
 * 删除多余的换行
