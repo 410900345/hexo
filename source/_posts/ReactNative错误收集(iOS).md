@@ -25,7 +25,7 @@ tags:
 	var component = React.createClass();
 
 RN升级导致的问题,官方[解决](http://bbs.reactnative.cn/topic/1857/seems-you-re-trying-to-access-reactnative-createclass/7)
-##错误五:重新安装sdk,react@15.3.1是sdk版本
+## 错误五:重新安装sdk,react@15.3.1是sdk版本
 
 ```	
 watchman watch-del-all
@@ -70,11 +70,12 @@ Undefined symbols for architecture x86_64:
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
-##错误七: React Native cant find RCTEventEmitter after cocoapods integration 
-
+## 错误七: React Native cant find RCTEventEmitter after cocoapods integration
 解决方法:
 
-* cleaning xcode under Product menu cmd + K 
-* clearing rm ios/build/* 
-* react-native unlink 
-* src/ios $ pod clean && pod deintegrate && pod install
+```
+cleaning xcode under Product menu cmd + K
+clearing rm ios/build/*
+react-native unlink
+src/ios $ pod clean && pod deintegrate && pod install
+```
