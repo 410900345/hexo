@@ -55,6 +55,14 @@ atom-text-editor::shadow .wrap-guide {
   visibility: hidden;
 }
 ```
+#### 4.针对不同电脑设置之间的设置同步
+安装package sync-settings:,按说明操作
+同步命令
+
+```
+sync-settings:backup
+sync-settings:restore
+```
 
 
 --------

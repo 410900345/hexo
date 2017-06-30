@@ -79,3 +79,27 @@ clearing rm ios/build/*
 react-native unlink
 src/ios $ pod clean && pod deintegrate && pod install
 ```
+## 错误八:碰到的问题“Cannot find entry file index.ios.js in any of the roots:”
+
+```
+	Cannot find entry file index.ios.js in any of the roots:
+```
+由于编译库node里面的版本不兼容导致,尝试以下做法
+
+升级npm
+
+```
+npm install npm@latest -g
+```
+
+升级 react 
+
+```
+npm install -g react-native-git-upgrade
+```
+
+删掉根目录下的 `package-lock.json` 
+
+重新 `npm install`
+
+[参考文章 Yarn vs npm](http://qianduan.guru/2016/11/09/yarn-vs-npm/)
