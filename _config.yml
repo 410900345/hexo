@@ -123,7 +123,7 @@ qiniu:
   access_key: cHfHdhVvNZHutxCd3Kz8X7DqbsY834Yx-noq6L6l
   secret_key: IkVtMv5mhMuhLd-tTUzz5jwGZDgLdXk0ySxuwaaX
   dirPrefix: static
-  urlPrefix: http://sukeyang.qiniudn.com/static
+  urlPrefix: http://oscmg6lez.bkt.clouddn.com/static
   up_host: http://up-z1.qiniu.com
   local_dir: static
   update_exist: true
