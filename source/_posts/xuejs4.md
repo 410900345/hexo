@@ -13,14 +13,32 @@ tags:
 
 [Javascript 严格模式详解](http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html)
 
-## 2.yarn的用法
+## 2.yarn的用法,[官网](https://yarnpkg.com/zh-Hans/docs/usage)
+
+- 安装
 ```
 npm install --save 等于 yarn add
 npm install 等于 yarn 
 ```
+
 [地址](https://shenbao.github.io/ishehui/html/%E6%9D%82%E8%B0%88/Facebook%20%E5%BC%80%E6%BA%90%E7%9A%84%20Yarn%20%E6%96%B0%E5%9E%8B%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.html)
 
-更好淘宝镜像
+- 移除依赖包
+
+```
+yarn remove [package]
+```
+
+- 升级依赖包
+
+```
+yarn upgrade [package]
+yarn upgrade [package]@[version]
+yarn upgrade [package]@[tag]
+```
+
+- 更换淘宝镜像
+
 ```
 yarn config get registry
 # -> https://registry.yarnpkg.com

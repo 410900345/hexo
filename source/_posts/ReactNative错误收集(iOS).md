@@ -102,4 +102,9 @@ npm install -g react-native-git-upgrade
 
 重新 `npm install`
 
+## 错误九:No dimension set for key window
+```
+npm start --reset-cache
+```
+
 [参考文章 Yarn vs npm](http://qianduan.guru/2016/11/09/yarn-vs-npm/)
