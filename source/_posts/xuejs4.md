@@ -37,6 +37,12 @@ yarn upgrade [package]@[version]
 yarn upgrade [package]@[tag]
 ```
 
+- 其他命令
+
+```
+yarn list [package]
+```
+
 - 更换淘宝镜像
 
 ```
