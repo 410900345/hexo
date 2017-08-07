@@ -127,6 +127,7 @@ Examples:
 
 ```
 code-push deployment history FindFood-ios Production
+code-push deployment history FindFood-ios Staging
 ```
 
 [参考地址](http://www.cnblogs.com/rayshen/p/5502538.html)
