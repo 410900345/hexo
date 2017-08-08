@@ -88,7 +88,7 @@ mkdir ios/bundle android/bundle
 react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle
 
 ## android的路径
-react-native bundle --entry-file index.ios.js  --bundle-output android/bundle/main.jsbundle
+react-native bundle --entry-file index.android.js  --bundle-output android/bundle/main.jsbundle
 
 ```
 
@@ -97,7 +97,7 @@ react-native bundle --entry-file index.ios.js  --bundle-output android/bundle/ma
 ```
 code-push release FindFood-ios -d Production ios/bundle/main.jsbundle 1.0.0
 
-code-push release FindFood-ios -d Production android/bundle/main.jsbundle 1.0.0
+code-push release FindFood-android -d Production android/bundle/main.jsbundle 1.0.0
 
 ```
 解释
