@@ -1,11 +1,9 @@
 ---
 title: codepush使用
-categories: 'ios,技巧,tools,js,原理,iphone,小技巧<!--选一个-->'
+categories: 'js'
 date: 2017-08-07 14:09:18
 tags:
 ---
-
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->
 
 ### 简介
 
@@ -109,7 +107,7 @@ code-push release FindFood-android -d Staging android/bundle/index.android.bundl
 code-push release-react app_android android --dev false --d Production -m true
 ```
 
-andriod打包bug代码[After code-push release-react, device will Crash](https://github.com/Microsoft/react-native-code-push/issues/912)
+andriod打包bug代码,看[react-native-code-push/issues:After code-push release-react, device will Crash](https://github.com/Microsoft/react-native-code-push/issues/912)
 解释
 
 ```

@@ -1,12 +1,13 @@
 ---
 title: andriod打包相关
-categories: 'ios,技巧,tools,js,原理,iphone,小技巧<!--选一个-->'
+categories: 'js'
 date: 2017-08-08 11:34:21
 tags:
 ---
 
 ### 简介
-http://localhost:8081/index.android.bundle?platform=android；当应用启动运行的时候，会自动拉取这个bundle文件，该文件里存放的是应用的全部逻辑代码，在目录中并不存在这个文件，事实上，这个地址只是一个请求地址，而非真正的静态资源文件，是通过包服务器packager通过动态分析index.android.js中的依赖，并对其进行合并得到的，而且该服务允许代码实时渲染。
+
+`http://localhost:8081/index.android.bundle?platform=android；`当应用启动运行的时候，会自动拉取这个bundle文件，该文件里存放的是应用的全部逻辑代码，在目录中并不存在这个文件，事实上，这个地址只是一个请求地址，而非真正的静态资源文件，是通过包服务器packager通过动态分析index.android.js中的依赖，并对其进行合并得到的，而且该服务允许代码实时渲染。
 
 ### 具体步骤
 - 1.生成一个签名密钥
@@ -36,9 +37,9 @@ Windows下安装使用curl命令:http://jingyan.baidu.com/article/a681b0dec4c67a
 
 在build.gradle文件中
 
-//签名
  
 ```
+//签名
 signingConfigs{ release { storeFile file("/my-release-key.keystore") storePassword "密码" keyAlias "keyAlias的名字" keyPassword "密码" } } buildTypes { release { minifyEnabled false proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro' signingConfig signingConfigs.release //添加这句话引用签名配置 } }
 ```
 
