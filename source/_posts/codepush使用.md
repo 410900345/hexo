@@ -74,6 +74,7 @@ code-push deployment ls <appName> [--format <format>] [--displayKeys]
   code-push deployment ls MyApp --format json
 ```
 相关其他命令
+
 ```
 Usage: code-push deployment <command>
 命令：
