@@ -85,10 +85,10 @@ code-push deployment ls <appName> [--format <format>] [--displayKeys]
 mkdir ios/bundle android/bundle
 
 ## ios的路径
-react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle
+react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle --assets-dest ios/bundle
 
 ## android的路径
-react-native bundle --entry-file index.android.js  --bundle-output android/bundle/main.jsbundle
+react-native bundle --entry-file index.android.js  --bundle-output android/bundle/index.android.bundle --assets-dest android/bundle
 
 ```
 
@@ -97,9 +97,19 @@ react-native bundle --entry-file index.android.js  --bundle-output android/bundl
 ```
 code-push release FindFood-ios -d Production ios/bundle/main.jsbundle 1.0.0
 
-code-push release FindFood-android -d Production android/bundle/main.jsbundle 1.0.0
+react-native bundle --platform android --entry-file index.android.js --bundle-output android/bundle/main.jsbundle --assets-dest android/bundle --dev false
+
+code-push release FindFood-android -d Staging android/bundle/index.android.bundle 1.0.0
 
 ```
+
+`下面代码会崩溃`
+
+```
+code-push release-react app_android android --dev false --d Production -m true
+```
+
+andriod打包bug代码[After code-push release-react, device will Crash](https://github.com/Microsoft/react-native-code-push/issues/912)
 解释
 
 ```
@@ -128,6 +138,7 @@ Examples:
 ```
 code-push deployment history FindFood-ios Production
 code-push deployment history FindFood-ios Staging
+
 ```
 
 [参考地址](http://www.cnblogs.com/rayshen/p/5502538.html)
