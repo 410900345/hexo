@@ -1,11 +1,9 @@
 ---
 title: codepush使用
-categories: 'ios,技巧,tools,js,原理,iphone,小技巧<!--选一个-->'
+categories: 'js'
 date: 2017-08-07 14:09:18
 tags:
 ---
-
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->
 
 ### 简介
 
@@ -98,11 +96,11 @@ Usage: code-push deployment <command>
 ## 创建文件夹打包路径文件夹 
 mkdir ios/bundle android/bundle
 
-## ios的路径,-/-assets-dest ios/bundle/ 表示加上图片目录
-react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle --assets-dest ios/bundle/
+## ios的路径
+react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle --assets-dest ios/bundle
 
 ## android的路径
-react-native bundle --entry-file index.android.js  --bundle-output android/bundle/main.jsbundle
+react-native bundle --entry-file index.android.js  --bundle-output android/bundle/index.android.bundle --assets-dest android/bundle
 
 ```
 
@@ -113,9 +111,19 @@ code-push release FindFood-ios -d Production ios/bundle/main.jsbundle 1.0.0
 ## 测试
 code-push release FindFood-ios -d Staging ios/bundle/main.jsbundle 1.0.0  
 
-code-push release FindFood-ios -d Production android/bundle/main.jsbundle 1.0.0
+react-native bundle --platform android --entry-file index.android.js --bundle-output android/bundle/main.jsbundle --assets-dest android/bundle --dev false
+
+code-push release FindFood-android -d Staging android/bundle/index.android.bundle 1.0.0
 
 ```
+
+`下面代码会崩溃`
+
+```
+code-push release-react app_android android --dev false --d Production -m true
+```
+
+andriod打包bug代码,看[react-native-code-push/issues:After code-push release-react, device will Crash](https://github.com/Microsoft/react-native-code-push/issues/912)
 解释
 
 ```
@@ -144,6 +152,7 @@ Examples:
 ```
 code-push deployment history FindFood-ios Production
 code-push deployment history FindFood-ios Staging
+
 ```
 
 [参考地址](http://www.cnblogs.com/rayshen/p/5502538.html)
