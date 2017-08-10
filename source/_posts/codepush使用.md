@@ -75,6 +75,20 @@ code-push deployment ls <appName> [--format <format>] [--displayKeys]
   code-push deployment ls MyApp 
   code-push deployment ls MyApp --format json
 ```
+相关其他命令
+```
+Usage: code-push deployment <command>
+命令：
+  add      在已存在的App中创建一个部署
+  clear    清除与部署相关的发布历史记录,删掉
+  remove   在App中删除一个部署
+  rm       在App中删除一个部署
+  rename   重命名一个已存在的部署
+  list     列出App中的所有部署
+  ls       列出App中的所有部署
+  history  列出一个部署的发布历史记录
+  h        列出一个部署的发布历史记录
+```
 
 发布（Release）
 
@@ -84,11 +98,11 @@ code-push deployment ls <appName> [--format <format>] [--displayKeys]
 ## 创建文件夹打包路径文件夹 
 mkdir ios/bundle android/bundle
 
-## ios的路径
-react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle
+## ios的路径,-/-assets-dest ios/bundle/ 表示加上图片目录
+react-native bundle --entry-file index.ios.js  --bundle-output ios/bundle/main.jsbundle --assets-dest ios/bundle/
 
 ## android的路径
-react-native bundle --entry-file index.ios.js  --bundle-output android/bundle/main.jsbundle
+react-native bundle --entry-file index.android.js  --bundle-output android/bundle/main.jsbundle
 
 ```
 
@@ -96,6 +110,8 @@ react-native bundle --entry-file index.ios.js  --bundle-output android/bundle/ma
 
 ```
 code-push release FindFood-ios -d Production ios/bundle/main.jsbundle 1.0.0
+## 测试
+code-push release FindFood-ios -d Staging ios/bundle/main.jsbundle 1.0.0  
 
 code-push release FindFood-ios -d Production android/bundle/main.jsbundle 1.0.0
 
@@ -131,3 +147,4 @@ code-push deployment history FindFood-ios Staging
 ```
 
 [参考地址](http://www.cnblogs.com/rayshen/p/5502538.html)
+[参考地址2](https://senpng.github.io/2016/03/23/code-push/)
