@@ -107,4 +107,28 @@ npm install -g react-native-git-upgrade
 npm start --reset-cache
 ```
 
+## 错误10:错误描述
+
+```
+CodeSign /Users/yangshuo/Library/Developer/Xcode/DerivedData/shopkeeper-euiqdjptqdpqzcgwfumczgxlmjsf/Build/Products/Release-iphonesimulator/shopkeeper.app
+    cd /Users/yangshuo/Documents/shengxincode/FIndFood/FindFood/ios
+    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    
+Signing Identity:     "-"
+
+    /usr/bin/codesign --force --sign - --timestamp=none /Users/yangshuo/Library/Developer/Xcode/DerivedData/shopkeeper-euiqdjptqdpqzcgwfumczgxlmjsf/Build/Products/Release-iphonesimulator/shopkeeper.app
+
+/Users/yangshuo/Library/Developer/Xcode/DerivedData/shopkeeper-euiqdjptqdpqzcgwfumczgxlmjsf/Build/Products/Release-iphonesimulator/shopkeeper.app: resource fork, Finder information, or similar detritus not allowed
+Command /usr/bin/codesign failed with exit code 1
+
+```
+解决办法
+
+```
+cd ~/Library/Developer/Xcode/DerivedData
+xattr -rc .
+```
+解决办法:[stackoverflow](https://stackoverflow.com/questions/39449665/xcode-8-cant-archive-command-usr-bin-codesign-failed-with-exit-code-1)
+
 [参考文章 Yarn vs npm](http://qianduan.guru/2016/11/09/yarn-vs-npm/)

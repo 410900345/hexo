@@ -63,7 +63,9 @@ atom-text-editor::shadow .wrap-guide {
 sync-settings:backup
 sync-settings:restore
 ```
+### 5.Atom 编辑器快捷键
 
+[快捷键大全](http://www.jianshu.com/p/aa8f8a252ed9)
 
 --------
 [参考1](http://www.lcode.org/%E3%80%90react-native%E5%BC%80%E5%8F%91%E3%80%91react-native%E5%BC%80%E5%8F%91ide%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/)
