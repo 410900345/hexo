@@ -14,3 +14,12 @@ hexo generate fail - Template render error: (unknown path)
 ```
 * 检查代码`"{/{ }/}"`改成`"{/{ }/}"`
 * 删除多余的换行
+
+## 2.错误代码
+
+Module version mismatch. Expected 48, got 47
+重新安装一下
+
+```
+sudo npm install hexo --no-optional
+```
