@@ -57,3 +57,34 @@ yarn config set registry 'https://registry.npm.taobao.org'
 - 永远都不要给 state 直接赋值，通过 setState
 用this.setState() 会触发数据流变动重新调用 render 函数,用this.state.value不会，应该是setState()函数里面有某些hook钩子函数。
 异步方法,里面有设置完成的回调函数
+
+## 4. Object.defineProperty
+
+```
+  var a= {}
+    Object.defineProperty(a,"b",{
+      value:123
+    })
+    console.log(a.b);//123
+```
+它接受三个参数都是必填的。。
+
+传入参数
+第一个参数:目标对象
+
+第二个参数:需要定义的属性或方法的名字。
+
+第三个参数:目标属性所拥有的特性。（descriptor）
+
+前两个参数不多说了，一看代码就懂，主要看第三个参数descriptor，看看有哪些取值
+
+descriptor
+他又以下取值，我们简单认识一下，后面例子，挨个介绍，
+
+value:属性的值(不用多说了)
+
+writable:如果为false，属性的值就不能被重写,只能为只读了
+
+configurable:总开关，一旦为false，就不能再设置他的（value，writable，configurable）
+
+enumerable:是否能在for...in循环中遍历出来或在Object.keys中列举出来。
