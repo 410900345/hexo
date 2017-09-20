@@ -88,3 +88,28 @@ writable:如果为false，属性的值就不能被重写,只能为只读了
 configurable:总开关，一旦为false，就不能再设置他的（value，writable，configurable）
 
 enumerable:是否能在for...in循环中遍历出来或在Object.keys中列举出来。
+
+## 5 obj1.func.call(obj)方法
+意思是将obj看成obj1,调用func方法
+
+## 6 Array.prototype.slice.call()方法详解
+arguments并不是真正的数组对象，只是与数组类似而已，所以它并没有slice这个方法，而Array.prototype.slice.call(arguments)可以理解成是让arguments转换成一个数组对象，让arguments具有slice()方法
+Array.prototype.slice.call(arguments)能将具有length属性的对象转成数组
+将函数的实际参数转换成数组的方法!
+方法一：var args = Array.prototype.slice.call(arguments);
+
+方法二：var args = [].slice.call(arguments, 0);
+
+方法三：
+
+var args = []; 
+for (var i = 1; i < arguments.length; i++) { 
+    args.push(arguments[i]);
+}
+[参考](http://blog.csdn.net/i10630226/article/details/49702375)
+
+## 7.Javascript中apply、call、bind
+javaScript 中，某个函数的参数数量是不固定的，因此要说适用条件的话，当你的参数是明确知道数量时用 call 。
+而不确定的时候用 apply，然后把参数 push 进数组传递进去。当参数数量不确定时，函数内部也可以通过 arguments 这个伪数组来遍历所有的参数。
+bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind()方法的第一个参数作为 this，传入 bind() 方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
+ 
