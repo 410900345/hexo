@@ -22,6 +22,8 @@ tags:
 * 映像建议选择Ubuntu 16.04.(CentOS 7也可以，但是我用了之后有问题，后文会提到）
 * 防火墙：允许HTTP流量，允许HTTPS流量
 
+<!-- more -->
+
 ![](http://raychinki.com/wp-content/uploads/2017/06/SSR_1.png)
 * vm创建完成后，进入控制台-网络-外部IP地址，将vm分配的外部地址由临时改为静态,需要一个固定地址ip为ss访问
 ![](http://raychinki.com/wp-content/uploads/2017/06/SSR_2.png)
@@ -39,9 +41,9 @@ tags:
 
 * 首先获得root权限，在SSH里输入
 
- ```
- sudo -i
- ```
+```
+sudo -i
+```
 
  
 * 下面安装Google的开源TCP BBR拥塞控制算法[秋水逸冰的BBR一键安装脚本地址](https://teddysun.com/489.html)三行命令
@@ -53,22 +55,22 @@ chmod +x bbr.sh
 ```
  
  可以使用下面命令校验
- 
- ```
- sysctl net.ipv4.tcp_available_congestion_control
- ```
+
+```
+sysctl net.ipv4.tcp_available_congestion_control
+```
  
  出现
  
- ```
- net.ipv4.tcp_available_congestion_control = bbr cubic reno
- ```
+```
+net.ipv4.tcp_available_congestion_control = bbr cubic reno
+```
  
  类似含有bbr字样即成功。
  
 * 安装[ShadowSocks脚本,秋水逸冰的四合一一键安装脚本](https://teddysun.com/489.html),三行命令
  
- ```
+```
 wget –no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
