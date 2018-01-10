@@ -87,7 +87,7 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
-theme: next-reloaded
+theme: next
 
 search:
   path: search.xml
