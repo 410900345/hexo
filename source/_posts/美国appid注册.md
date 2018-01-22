@@ -6,6 +6,7 @@ tags:
 ---
 
 ## 不用信用卡创建美国appstore id注册
+### 方法一
 
 * 在手机上找到appstore 选择帐号退出.
 * 搜素一个免费的应用`wingy`(翻墙)[点击](https://itunes.apple.com/us/app/id1178584911?mt=8)点击下载,自动跳转到美国商店.
@@ -20,4 +21,9 @@ tags:
 * 可以按书写地址(可直接填写下方我给出的信息)
 ![](http://upload-images.jianshu.io/upload_images/124489-0b8f7f987d54f302.jpg?imageView2/2/w/1240/q/100)
 
+### 方法二
+用PC去(可能手机也可以，刚没有试)， [icloud](https://www.icloud.com/ )注册账号，地区任意选择，QQ邮箱也没有问题。使用iPhone（未登录APP Store）下载一个免费应用，这时候使用iCloud ID登录，就会出现不需要信用卡的选项。
+
+
 [参考地址](http://www.jianshu.com/p/ea7815dcf5c8)
+[知乎](https://www.zhihu.com/question/63307784)
