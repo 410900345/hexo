@@ -122,6 +122,28 @@ title 为 \{\%4\} \{\%2\}
 link 为 \{\%3\}
 titlecontent 为 \{\%5\}
 ```
+* 掘金个人下面的专栏模板
+
+```
+<div data-src="{%}" {*}>{%}</span></a></div><span class="date" data-v-36108f72>{%}</span></div><!----><div class="row abstract-row" data-v-36108f72><a href="{%}" target="_blank" rel="" st:name="title" class="title" data-v-36108f72>{%}</a><a href="{%}" target="_blank" rel="" st:name="abstract" class="abstract" data-v-36108f72>{%}</a>
+```
+解析完后内容
+
+```
+\{\%1\} = xxx
+\{\%2\} = xxx
+\{\%3\} = 4月前
+\{\%4\} = https://juejin.im/post/xxx
+\{\%5\} = xxx）
+\{\%6\} = https://juejin.im/post/xxx
+\{\%7\} = 
+```
+
+```
+title 为 \{\%5\} \{\%3\}
+link 为 \{\%4\}
+titlecontent 为 \{\%7\}
+```
 
 * 微信公众号订阅
 [传送门](http://chuansong.me/)
