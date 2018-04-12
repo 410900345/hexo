@@ -38,11 +38,94 @@ tags:
 
 ![](https://img3.appinn.com/images/201305/2013-05-31-6-09-10.png/o)
 
+### 安装RSS Subscription Extension插件
+在Chrome中使用RSS服务，可以安装一个RSS Subscription Extension的插件，快捷添加 RSS 订阅源到指定的订阅服务.
+
+* 点击图标进入RSS Subscription Extension
+![](https://raw.githubusercontent.com/tiomke/TempPics/master/RSS%E8%AE%A2%E9%98%85%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%BD%BF%E7%94%A8/%E8%AE%A2%E9%98%85%E6%9C%8D%E5%8A%A1.png)
+
+* 点击管理,添加相应的订阅源
+![](https://raw.githubusercontent.com/tiomke/TempPics/master/RSS%E8%AE%A2%E9%98%85%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%80%89%E9%A1%B9%E8%AE%BE%E7%BD%AE.png)
+
+在RSS订阅选项设置页面中点击添加，在编辑供稿阅读器中加入说明和网址`http://www.inoreader.com/?add_feed=%s`。
+
+<!-- more -->
 ### 其他的订阅软件
 
 [一览](http://www.yilan.io/home/)免费版最多可以订阅100个RSS源、10个微信公众号。
 
-<!-- more -->
+### 替换模板
+* github.io 等 blog,根据实际博客样式情况,进行替换
+
+```
+</a>{*}
+{*}
+</h1>{*}
+{*}
+<div class="post-meta">{*}
+<time {*}
+content="{%}" >{*}
+{*}
+</time>{*}
+</div>{*}
+```
+解析完后内容
+
+```
+{%1} = 
+{%2} = http://xxx.html/
+{%3} = 
+{%4} = xxx
+{%5} = 
+{%6} = 
+{%7} = 
+{%8} = 2017-09-24
+{%9} = 09-24
+```
+
+取出的内容
+
+```
+title 为 {%4} {%8}
+link 为 {%2}
+titlecontent 为 {%4}
+```
+
+* 简书等内容的模板
+
+```
+<div class="content">{*}
+<div class="author">{*}
+{*} <span class="time" data-shared-at="{%}"></span>{*}
+</div>{*}
+</div>{*}
+<a class="title" target="_blank" href="{%}">{%}</a>{*}
+<p class="abstract">{*}
+{%}
+</p>{*}
+<div class="meta">{*}
+```
+解析完后内容
+
+```
+{%1} = xxx
+{%2} = 2017-08-22T22:06:41+08:00
+{%3} = https://www.jianshu.com/p/xxx
+{%4} = ixxx
+{%5} = xxx
+
+```
+取出的内容
+
+```
+title 为 {%4} {%2}
+link 为 {%3}
+titlecontent 为 {%5}
+```
+
+* 微信公众号订阅
+[传送门](http://chuansong.me/)
+
 
 ---------
 [手把手教你制作 RSS 源](https://sspai.com/post/34320)
@@ -50,5 +133,7 @@ tags:
 [为没有 Feed 的网页生成 RSS 格式](https://www.appinn.com/feed43/)
 
 [rss_for_everything](https://github.com/xzonepiece/rss_for_everything)
+
+[安装RSS Subscription Extension插件](https://www.jianshu.com/p/a589bce7d7cf)
 
 <!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->
