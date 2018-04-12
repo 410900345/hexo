@@ -18,13 +18,13 @@ tags:
 
 ```
 <div class="n1">{*}
-<a href="{%}" class="anchorLink" onclick={*}>{%}<br /><span>{%}</span></a>{*}
+<a href="\{\%\}" class="anchorLink" onclick={*}>\{\%\}<br /><span>\{\%\}</span></a>{*}
 </div>{*}
 ```
 
 `解释`
 
-`{%}`是替换我们要查看的内容比如 title, 时间,内容等,下一步会用到,按照模板进行替换就可以
+`\{\%\}`是替换我们要查看的内容比如 title, 时间,内容等,下一步会用到,按照模板进行替换就可以
 
 `{*}`是替换任意代码的通配符,每行末尾和空白行也加上`{*}`
 
@@ -64,7 +64,7 @@ tags:
 {*}
 <div class="post-meta">{*}
 <time {*}
-content="{%}" >{*}
+content="\{\%\}" >{*}
 {*}
 </time>{*}
 </div>{*}
@@ -72,23 +72,23 @@ content="{%}" >{*}
 解析完后内容
 
 ```
-{%1} = 
-{%2} = http://xxx.html/
-{%3} = 
-{%4} = xxx
-{%5} = 
-{%6} = 
-{%7} = 
-{%8} = 2017-09-24
-{%9} = 09-24
+\{\%1\} = 
+\{\%2\} = http://xxx.html/
+\{\%3\} = 
+\{\%4\} = xxx
+\{\%5\} = 
+\{\%6\} = 
+\{\%7\} = 
+\{\%8\} = 2017-09-24
+\{\%9\} = 09-24
 ```
 
 取出的内容
 
 ```
-title 为 {%4} {%8}
-link 为 {%2}
-titlecontent 为 {%4}
+title 为 \{\%4\} \{\%8\}
+link 为 \{\%2\}
+titlecontent 为 \{\%4\}
 ```
 
 * 简书等内容的模板
@@ -96,31 +96,31 @@ titlecontent 为 {%4}
 ```
 <div class="content">{*}
 <div class="author">{*}
-{*} <span class="time" data-shared-at="{%}"></span>{*}
+{*} <span class="time" data-shared-at="\{\%\}"></span>{*}
 </div>{*}
 </div>{*}
-<a class="title" target="_blank" href="{%}">{%}</a>{*}
+<a class="title" target="_blank" href="\{\%\}">{%}</a>{*}
 <p class="abstract">{*}
-{%}
+\{\%\}
 </p>{*}
 <div class="meta">{*}
 ```
 解析完后内容
 
 ```
-{%1} = xxx
-{%2} = 2017-08-22T22:06:41+08:00
-{%3} = https://www.jianshu.com/p/xxx
-{%4} = ixxx
-{%5} = xxx
+\{\%1\} = xxx
+\{\%2\} = 2017-08-22T22:06:41+08:00
+\{\%3\} = https://www.jianshu.com/p/xxx
+\{\%4\} = ixxx
+\{\%5\} = xxx
 
 ```
 取出的内容
 
 ```
-title 为 {%4} {%2}
-link 为 {%3}
-titlecontent 为 {%5}
+title 为 \{\%4\} \{\%2\}
+link 为 \{\%3\}
+titlecontent 为 \{\%5\}
 ```
 
 * 微信公众号订阅
