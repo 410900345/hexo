@@ -99,7 +99,7 @@ titlecontent 为 \{\%4\}
 {*} <span class="time" data-shared-at="\{\%\}"></span>{*}
 </div>{*}
 </div>{*}
-<a class="title" target="_blank" href="\{\%\}">{%}</a>{*}
+<a class="title" target="_blank" href="\{\%\}">\{\%\}</a>{*}
 <p class="abstract">{*}
 \{\%\}
 </p>{*}
@@ -125,7 +125,7 @@ titlecontent 为 \{\%5\}
 * 掘金个人下面的专栏模板
 
 ```
-<div data-src="{%}" {*}>{%}</span></a></div><span class="date" data-v-36108f72>{%}</span></div><!----><div class="row abstract-row" data-v-36108f72><a href="{%}" target="_blank" rel="" st:name="title" class="title" data-v-36108f72>{%}</a><a href="{%}" target="_blank" rel="" st:name="abstract" class="abstract" data-v-36108f72>{%}</a>
+<div data-src="\{\%\}" {*}>\{\%\}</span></a></div><span class="date" data-v-36108f72>\{\%\}</span></div><!----><div class="row abstract-row" data-v-36108f72><a href="\{\%\}" target="_blank" rel="" st:name="title" class="title" data-v-36108f72>\{\%\}</a><a href="\{\%\}" target="_blank" rel="" st:name="abstract" class="abstract" data-v-36108f72>\{\%\}</a>
 ```
 解析完后内容
 
