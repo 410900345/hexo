@@ -30,7 +30,7 @@ tags:
 ```
  git add .
  git commit -s -m 'init'
- git remote add origin git@1xxxx:user/XXCommonSDK_iOS.git  #添加远端仓库
+ git remote add origin http://xxxx:user/XXCommonSDK_iOS.git  #添加远端仓库
  git push origin master     #提交到远端仓库
  git tag -m "first release" 0.1.0
  git push --tags     #推送tag到远端仓库
@@ -95,10 +95,10 @@ XXCommonSDK passed validation.
 ### 向Spec Repo提交podspec
 * 1.可以查看 `~/.cocoapods/repos` 目录下的文件,里面有每个三方库文件的对应版本`podspec `
 
-在gitlab上建立一个SukSpecs项目（管理所有的pod spec文件）,
+`在gitlab上另外建立一个SukSpecs项目（管理所有的pod spec文件）`,
 
 ```
-pod repo add SukSpecs git@xxx:xxx/iOSPGSDK.git
+pod repo add SukSpecs git@xxx:xxx/SukSpecs.git
 ```
 
 * 2.添加成功之后可以,进行查看pod的三方库下载的查找索引地址,
