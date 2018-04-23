@@ -80,6 +80,8 @@ end
 
 ```
 pod lib lint
+//或者
+pod spec lint --use-libraries --allow-warnings --verbose //忽略警告
 ```
 
 ```
