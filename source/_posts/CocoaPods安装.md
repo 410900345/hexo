@@ -41,20 +41,23 @@ pod repo add sdkMaster https://gitlab.coding.net/Specs.git
 
 	pod install --verbose --no-repo-update
 
-# 4 安装和卸载pod
+# 4.安装和卸载pod
    
 ```   
 sudo gem uninstall cocoapods  卸载
 sudo gem install cocoapods    指定版本追加(-v 0.39) 安装
 ```
-# 4 pod错误
-ocoapods: Failed to connect to GitHub to update the CocoaPods/Specs specs repo
+
+# 5.pod错误
+错误描述`cocoapods: Failed to connect to GitHub to update the CocoaPods/Specs specs repo`
 
 更新pod和ruby
 
 ```
-brew install ruby
+brew install ruby  //安装
+brew upgrade ruby  //更新
 sudo gem install cocoapods
 ```
+
 [stackoverflow](https://stackoverflow.com/questions/38993527/cocoapods-failed-to-connect-to-github-to-update-the-cocoapods-specs-specs-repo)
 
