@@ -74,6 +74,7 @@ Host my.github.com
     HostName github.com  
     IdentityFile ~/.ssh/my  
 ```
+
 进行验证
 
 ```
@@ -87,3 +88,14 @@ ssh -T git@my.github.com
 [remote "origin"]  
     url = git@my.github.com:itmyline/blog.git  
 ```
+
+## 错误收集
+### 1.ssh “permissions are too open” error
+
+Keys need to be only readable by you:
+
+```
+chmod 400 ~/.ssh/id_rsa
+```
+
+[stack](https://stackoverflow.com/questions/9270734/ssh-permissions-are-too-open-error)
