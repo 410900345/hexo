@@ -90,6 +90,12 @@ wget https://github.com/downloads/joelthelion/autojump/autojump_v21.1.2.tar.gz
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 ```
 
+同时追加
+```
+plugins=(git autojump osx)
+
+```
+
 使用是
 
 ```
@@ -106,7 +112,49 @@ alias rni="react-native run-ios"
 
 以后就可以使用`rna ``rni `运行了
 
+## 显示隐藏文件的方法
+
+```
+#显示全部文件
+defaults write com.apple.finder AppleShowAllFiles -bool true
+osascript -e 'tell application "Finder" to quit'
+
+#不显示全部文件
+defaults write com.apple.finder AppleShowAllFiles -bool false
+osascript -e 'tell application "Finder" to quit'
+```
+
+## 安装ruby
+
+通过Homebrew安装Ruby
+
+```
+$ brew install ruby
+```
+
+错误log
+
+```
+Users/yangshuo06/.rvm/src/ruby-2.4.1/.ext/x86_64-darwin17/openssl.bundle, 9): Library not loaded: /usr/local/opt/openssl@1.1/lib/libssl.1.1.dylib (LoadError)
+```
+
+全部删掉重新安装
+
+```
+brew uninstall ruby
+
+brew uninstall openssl
+```
+
+`/usr/local/opt` 权限问题
+
+```
+sudo chown -R `whoami`:admin /usr/local/opt
+```
+
 --------
 [参考1](https://zhuanlan.zhihu.com/p/19556676?columnSlug=mactalk)
 
 [参考2](http://blog.csdn.net/hejisan/article/details/50432993)
+
+[Ruby安装(Mac)](https://www.jianshu.com/p/4536cfd1c1f2)
