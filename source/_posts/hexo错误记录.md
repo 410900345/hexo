@@ -68,3 +68,22 @@ hexo-site@0.0.0 /Users/hl/hexo
 └── hexo-server@0.2.0
 
 ```
+
+### 4.相关错误
+
+```
+$ hexo g
+INFO  Start processing
+FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
+Template render error: (unknown path) [Line 7, Column 23]
+Error: Unable to call `the return value of (posts["first"])["updated"]["toISOString"]`, which is undefined or falsey
+```
+
+当移除掉插件hexo-generator-feed和hexo-generator-sitemap后错误消失，怀疑该插件与hexo兼容性不好
+
+```
+$npm uninstall hexo-generator-feed
+$npm uninstall hexo-generator-sitemap
+```
+
+[相关代码](https://github.com/hexojs/hexo-generator-feed/issues/43)

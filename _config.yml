@@ -68,8 +68,8 @@ pagination_dir: page
 # Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 Plugins:
-  - hexo-generator-feed
-  - hexo-generator-sitemap
+  # hexo-generator-feed
+  # hexo-generator-sitemap
   - hexo-generator-search
   - hexo-generator-searchdb --save
 # - hexo-generator-baidu-sitemap
