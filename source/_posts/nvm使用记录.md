@@ -18,7 +18,9 @@ sudo rm -rf /usr/local/lib/node_modules #删除全局 node_modules 目录
 sudo rm /usr/local/bin/node #删除 node
 cd  /usr/local/bin && ls -l | grep "../lib/node_modules/" | awk '{print $9}'| xargs rm #删除全局 node 模块注册的软链
 ```
+
 其他删除指令
+
 ```
 sudo rm /usr/local/bin/npm
 sudo rm /usr/local/share/man/man1/node.1
@@ -30,8 +32,8 @@ sudo rm /opt/local/include/node
 sudo rm -rf /opt/local/lib/node_modules
 
 ```
-## 2.安装NVM（前提是你安装了homebrew）
 
+## 2.安装NVM（前提是你安装了homebrew）
 
 ```
 $ brew install nvm 
