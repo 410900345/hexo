@@ -31,7 +31,6 @@ sudo npm install hexo --no-optional
 ### 3.两个电脑上配置问题
 
 使用node 4.4.7 和删掉 nodemodles 文件夹
-
 ```
 nvm install 4.4.7
 ```
@@ -46,3 +45,5 @@ nvm install 4.4.7
 ```
 npm install -- save-dev hexo-util
 ```
+
+切换到`master`分支进行提交部署`hexo d`
