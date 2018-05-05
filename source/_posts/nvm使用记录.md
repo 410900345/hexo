@@ -53,6 +53,7 @@ npm install -g react-native-cli #安装 react-native-cli 模块至全局目录�
 npm install hexo-cli -g
 ```
 ## 3.查看安装结果
+
 ```
 $ node -v
 $ npm -v 
@@ -62,6 +63,7 @@ $ npm -v
 ```
 $ rm -rf ~/.nvm
 ```
+
 
 [参考地址1](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)
 
