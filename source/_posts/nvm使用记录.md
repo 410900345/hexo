@@ -44,6 +44,7 @@ $ nvm ls-remote 查看 所有的node可用版本
 $ nvm install xxx 下载你想要的版本
 $ nvm use xxx 使用指定版本的node 
 $ nvm alias default xxx 每次启动终端都使用该版本的node 
+$ nvm install stable 最新版本
 ```
 
 ```

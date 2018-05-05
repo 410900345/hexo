@@ -30,60 +30,19 @@ sudo npm install hexo --no-optional
 ```
 ### 3.两个电脑上配置问题
 
-公司电脑是正确的
+使用node 4.4.7 和删掉 nodemodles 文件夹
 
 ```
-➜  hexo git:(develop) ✗ hexo -v
-hexo: 3.3.7
-hexo-cli: 1.0.3
-os: Darwin 16.7.0 darwin x64
-http_parser: 2.6.0
-node: 5.2.0
-v8: 4.6.85.31
-uv: 1.7.5
-zlib: 1.2.8
-ares: 1.10.1-DEV
-icu: 56.1
-modules: 47
-openssl: 1.0.2e
-
-➜  hexo git:(develop) ✗ npm ls --depth 0
-hexo-site@0.0.0 /Users/hl/hexo
-├── g@2.0.1 extraneous
-├── hexo@3.3.7
-├── hexo-deployer-git@0.2.0
-├── hexo-generator-archive@0.1.4
-├── hexo-generator-baidu-sitemap@0.1.2
-├── hexo-generator-category@0.1.3
-├── hexo-generator-feed@1.2.0
-├── hexo-generator-index@0.2.0
-├── hexo-generator-search@1.0.3
-├── hexo-generator-searchdb@1.0.3
-├── hexo-generator-sitemap@1.1.2
-├── hexo-generator-tag@0.2.0
-├── hexo-qiniu-sync@1.4.7
-├── hexo-renderer-ejs@0.2.0
-├── hexo-renderer-marked@0.2.11
-├── hexo-renderer-stylus@0.3.1
-└── hexo-server@0.2.0
-
+nvm install 4.4.7
 ```
 
-### 4.相关错误
+### 4.升级NexT v6.0.0以上
+下载新版本到`themes`把文件夹改名为`next`
+
+### 5.Cannot find module 'hexo-util'
+
+重新安装
 
 ```
-$ hexo g
-INFO  Start processing
-FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
-Template render error: (unknown path) [Line 7, Column 23]
-Error: Unable to call `the return value of (posts["first"])["updated"]["toISOString"]`, which is undefined or falsey
+npm install -- save-dev hexo-util
 ```
-
-当移除掉插件hexo-generator-feed和hexo-generator-sitemap后错误消失，怀疑该插件与hexo兼容性不好
-
-```
-$npm uninstall hexo-generator-feed
-$npm uninstall hexo-generator-sitemap
-```
-
-[相关代码](https://github.com/hexojs/hexo-generator-feed/issues/43)
