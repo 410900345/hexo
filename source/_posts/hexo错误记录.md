@@ -30,10 +30,14 @@ sudo npm install hexo --no-optional
 ```
 ### 3.两个电脑上配置问题
 
-使用node 4.4.7 和删掉 nodemodles 文件夹
+ERROR Local hexo not found in ~/hexo_blog
+ERROR Try running: 'npm install hexo --save'
+
+使用node 6.14.2 和删掉 nodemodles 文件夹
 ```
-nvm install 4.4.7
+nvm install 6.14.2
 ```
+
 
 ### 4.升级NexT v6.0.0以上
 下载新版本到`themes`把文件夹改名为`next`
@@ -47,3 +51,5 @@ npm install -- save-dev hexo-util
 ```
 
 切换到`master`分支进行提交部署`hexo d`
+
+
