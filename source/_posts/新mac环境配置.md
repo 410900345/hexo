@@ -1,5 +1,5 @@
 ---
-title: 新mac环境配置
+title: 新mac 环境配置
 categories: 'ios,技巧,tools,js,原理,iphone,小技巧<!--选一个-->'
 date: 2018-05-04 14:36:45
 tags:
@@ -18,6 +18,15 @@ $ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/bins
 
 配置环境变量~/.bash_profile
 
+配置淘宝镜像地址
+
+```
+https://ruby-china.org/wiki/rvm-guide
+```
+
+
 <!-- more -->
 
 <!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->
+
+[参考地址]()
