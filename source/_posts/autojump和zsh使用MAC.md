@@ -144,6 +144,8 @@ Users/yangshuo06/.rvm/src/ruby-2.4.1/.ext/x86_64-darwin17/openssl.bundle, 9): Li
 brew uninstall ruby
 
 brew uninstall openssl
+
+uninstall_oh_my_zsh //卸载oh_my_zsh
 ```
 
 `/usr/local/opt` 权限问题
