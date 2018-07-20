@@ -67,9 +67,9 @@ echo $SHELL
 cat /etc/shells
 ```
 
-## 安装autojump
+## 插件
 
-#### 1.执行命令自动安装
+#### 1.安装autojump执行命令自动安装
 ```
 	brew install autojump
 ```
@@ -91,6 +91,7 @@ wget https://github.com/downloads/joelthelion/autojump/autojump_v21.1.2.tar.gz
 ```
 
 同时追加
+
 ```
 plugins=(git autojump osx)
 
@@ -100,7 +101,17 @@ plugins=(git autojump osx)
 
 ```
  j xxx文件夹
+
 ```
+
+#### 2.git plugin 配置快捷配置,
+
+
+```
+source  ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+```
+
+[](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
 
 ## 自定义设置
 对RN的命名简化,在`~/.zshrc`里面最后添加
