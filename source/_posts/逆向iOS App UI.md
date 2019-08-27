@@ -56,4 +56,6 @@ ssh -p 4567 root@127.0.0.1
 
 [SSH连接iPhone(Wifi和USB)](https://www.jianshu.com/p/bf69cefc5f39)
 
+[Cycript使用简介](https://www.jianshu.com/p/c93f5c3f1c7a)
+
 <!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->
