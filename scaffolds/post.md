@@ -8,4 +8,3 @@ categories:
 
 <!-- more -->
 
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->

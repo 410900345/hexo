@@ -108,5 +108,3 @@ exit 0
 [参考链接1](http://raychinki.com/?p=1020)
 
 [参考链接2](http://51.ruyo.net/p/2144.html)
-
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->

@@ -16,13 +16,14 @@ tags:
 ```
 接着在控制台就会输出以下几个问题让你来回答：
 
-{% qnimg pod_create.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}
+![](https://raw.githubusercontent.com/sukeyang/blogImage/master/imgpod_create.png)
+
 
 完成以上的问题后控制台会输出以下信息 ，然后自动打开所创建的项目
 
 * 2.在以下截图的目录下添加你的实现代码，里面自带一个ReplaceMe.m文件，直接删除它就好了，添加你自己的.h.m实现文件 ，如下图：
 
-{% qnimg replaceMe.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}
+![](https://raw.githubusercontent.com/sukeyang/blogImage/master/imgreplaceMe.png)
 
 <!-- more -->
 * 3.修改Podfile文件，打开工程目录下Example目录的Podfile文件，修改如下提交仓库到 git：

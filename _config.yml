@@ -4,10 +4,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SukeYang的博客
+title: sukeyang的博客
 subtitle: 记录下自己学习的点滴
 description: "记录下自己学习的点滴~" #网站描述
-author: SukeYang
+author: sukeyang
 language: zh-Hans
 timezone:
 
@@ -115,25 +115,25 @@ donate_message: 欣赏此文？求鼓励，求支持！
 ##image/js/css  子参数folder为不同静态资源种类的目录名称，一般不需要改动
 ##image.extend  这是个特殊参数，用于生成缩略图或加水印等操作。具体请参考http://developer.qiniu.com/docs/v6/api/reference/fop/image/ 
 ##              可使用基本图片处理、高级图片处理、图片水印处理这3个接口。例如 ?imageView2/2/w/500 即生成宽度最多500px的缩略图
-qiniu:
-  offline: false
-  sync: true
-  bucket: sukeyang
-  # secret_file: sec/qn.json or C:
-  access_key: cHfHdhVvNZHutxCd3Kz8X7DqbsY834Yx-noq6L6l
-  secret_key: IkVtMv5mhMuhLd-tTUzz5jwGZDgLdXk0ySxuwaaX
-  dirPrefix: static
-  urlPrefix: http://oscmg6lez.bkt.clouddn.com/static
-  up_host: http://up-z1.qiniu.com
-  local_dir: static
-  update_exist: true
-  image: 
-    folder: images
-    extend: 
-  js:
-    folder: js
-  css:
-    folder: css
+# qiniu:
+#   offline: false
+#   sync: true
+#   bucket: sukeyang
+#   # secret_file: sec/qn.json or C:
+#   access_key: cHfHdhVvNZHutxCd3Kz8X7DqbsY834Yx-noq6L6l
+#   secret_key: IkVtMv5mhMuhLd-tTUzz5jwGZDgLdXk0ySxuwaaX
+#   dirPrefix: static
+#   urlPrefix: http://oscmg6lez.bkt.clouddn.com/static
+#   up_host: http://up-z1.qiniu.com
+#   local_dir: static
+#   update_exist: true
+#   image: 
+#     folder: images
+#     extend: 
+#   js:
+#     folder: js
+#   css:
+#     folder: css
 
 
 

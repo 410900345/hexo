@@ -31,5 +31,3 @@ Xcode打包的文件dSYM等内容,保留上线版本,如果使用第三方的 bu
 模拟器上的APP数据,重置模拟器会删掉相应的文件,可以按时间进行排序,然后删掉比较老的文件,或者直接全部删掉,编译运行会再次重新安装 APP.
 
 [参考地址](https://www.iwangke.me/2013/09/09/clean-xcode-to-free-up-disk-space/)
-
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->

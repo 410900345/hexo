@@ -13,7 +13,6 @@ tags:
 * [Feed43](http://feed43.com/feed.html?name=2441323566728440)可以为静态网站制作RSS.
 
 * 首先输入页面地址：http://love.appinn.com，点击 Reload，就能看到页面代码了。
-![截图1](https://img3.appinn.com/images/201305/2013-05-31_5-54-24.png/o)
 替换成
 
 ```
@@ -157,5 +156,3 @@ titlecontent 为 \{\%7\}
 [rss_for_everything](https://github.com/xzonepiece/rss_for_everything)
 
 [安装RSS Subscription Extension插件](https://www.jianshu.com/p/a589bce7d7cf)
-
-<!--{% qnimg alfred.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}-->

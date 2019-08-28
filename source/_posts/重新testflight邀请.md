@@ -11,6 +11,6 @@ tags:
 
 ### 2.在`下图2itunes connect用户`重新添加这个邮箱,这个时候会重新发送邀请码
 
-{% qnimg testflight.png title:配置 alt:preferrence 'class:class1 class2' extend:?imageView2/2/w/1400 %}
+![](https://raw.githubusercontent.com/sukeyang/blogImage/master/imgtestflight.png)
 
 [参考地址1 stackoverflow](https://stackoverflow.com/questions/27389954/how-to-re-send-external-tester-invitations-on-apples-testflight-service)
