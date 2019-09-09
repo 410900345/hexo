@@ -28,14 +28,14 @@ tags:
 `{*}`是替换任意代码的通配符,每行末尾和空白行也加上`{*}`
 
 * Define extraction rules 我们输入,我们在下面输入,会按照内容继续解析
-![截图2](https://img3.appinn.com/images/201305/2013-05-315-56-31.png/o)
+![截图2](https://img3.appinn.net/images/201305/2013-05-315-56-31.png/o)
 
 * 再后面经过简单的设置，注意把第二个和第三个参数连起来：
-![](https://img3.appinn.com/images/201305/2013-05-31-6-07.png/o)
+![](https://img3.appinn.net/images/201305/2013-05-31-6-07.png/o)
 
 *自制版本的 Feed 就成功了,会输出我们的内容
 
-![](https://img3.appinn.com/images/201305/2013-05-31-6-09-10.png/o)
+![](https://img3.appinn.net/images/201305/2013-05-31-6-09-10.png/o)
 
 ### 安装RSS Subscription Extension插件
 在Chrome中使用RSS服务，可以安装一个RSS Subscription Extension的插件，快捷添加 RSS 订阅源到指定的订阅服务.
