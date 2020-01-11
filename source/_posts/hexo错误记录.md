@@ -53,3 +53,6 @@ npm install -- save-dev hexo-util
 切换到`master`分支进行提交部署`hexo d`
 
 
+### 5.hexo长时间未升级导致，执行错误
+新建文件夹，执行新的hexo命令来，把新的文件复制到里面里面保证新的格式正确
+
